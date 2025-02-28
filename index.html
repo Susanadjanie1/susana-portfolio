@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="./images/logo-no-background.png"> 
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+   
+
     <title>My Portfolio</title>
 </head>
 
 <header class="header">
     <nav class="nav">
-        <a href="">Susana</a>
+        <img src="./images/logo-no-background.png" alt="My Logo" class="h-12 w-auto animate-bounce-slow">
+       
         <ul class="nav-list">
             <li><a href="">About</a></li>
             <li><a href="">Skills</a></li>
@@ -18,15 +24,32 @@
             <li><a href="">Experience</a></li>
             <li><a href="">Projects</a></li>
             <li><a href="">Conatct</a></li>
-            <li><a href="">CV Download</a></li>
+            <li><a href="">CV</a></li>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <!-- <a href="#"><i class="fa fa-xing-square" aria-hidden="true"></i></a> -->
+                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+            </div>
         </ul>
+
+        
     </nav>
     <div class="header-text">
         <h1>I am Susana Djanie</h1>
         <p>Web Developer</p>
-        <button>View My Works</button>
+        <button class="px-6 py-3 font-semibold text-white bg-[#800020] 
+    rounded-lg shadow-lg shadow-blue-400 transition-transform transform hover:scale-105 
+    hover:shadow-purple-500 hover:brightness-110">
+    View My Works
+</button>
+
+        <!-- <button>View My Works</button> -->
     </div>
 
+    
     <div class="profile-img"></div>
 </header>
 
@@ -34,95 +57,348 @@
     <!-- <div class="img-container">
         <img src="./images/trial-pic.jpg" alt="about-img">
     </div> -->
-
-    <div class="about-info">
-    <h1>About me</h1>
-    <h2>Professional Summary</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-  <br> Reiciendis earum vitae ratione repellat dignissimos veritatis
-  delectus, voluptate modi ea doloribus! Praesentium, exercitationem!</p>
-    </div>
-
-    <div class="details-grid">
-       <div class="details-box">
-        <h1>Name</h1>
-        <p>Susana Djanie</p>
-       </div>
-
-       <div class="details-box">
-        <h1>Email</h1>
-        <p>Susanadjanie1@gmail.com</p>
-       </div>
-
-       <div class="details-box">
-        <h1>Address</h1>
-        <p>Accra,Ghana</p>
-       </div>
-
-       <div class="details-box">
-        <h1>Conatct</h1>
-        <p>+233208692395</p>
-       </div>
-    </div>
-</section>
-
-<!-- <section>
-    <div>
-        <h1>Skills</h1>
-    </div>
-    <div>
-<h1>Technical Skills</h1>
-<ul> 
-    <li>SI</li>
-    <li>DI</li>
-    <li>VI</li>
-    <li>wI</li>
-</ul>
-    </div>
-
-    <div>
-        <h1>Soft Skills</h1>
-<ul> 
-    <li>xSI</li>
-    <li>TDI</li>
-    <li>UVI</li>
-    <li>YwI</li>
-</ul>
-    </div>
-</section> -->
-
-<section class="skills-section">
-    <h2>Skills</h2>
-    <div class="skill">
-        <div class="skill-title">
-            <span>Web Development</span>
-            <span>80%</span>
+    <div class="about-container">
+        <div class="about-info">
+        <h1 class="about-text">About me</h1>
+        <h2>Professional Summary</h2>
+        <p>Solution driven backend developer with a business administration background, leveraging analytical 
+            and problem-solving skills to develop scalable server-side applications.</p>
         </div>
-        <div class="progress-bar">
-            <div class="progress" style="width: 50%;"></div>
-        </div>
-    </div>
-    <div class="skill">
-        <div class="skill-title">
-            <span>UI Designer</span>
-            <span>90%</span>
-        </div>
-        <div class="progress-bar">
-            <div class="progress" style="width: 50%;"></div>
-        </div>
-    </div>
-    <div class="skill">
-        <div class="skill-title">
-            <span>Photography</span>
-            <span>85%</span>
-        </div>
-        <div class="progress-bar">
-            <div class="progress" style="width: 55%;"></div>
-        </div>
-    </div>
-</section>
-
-<body>
     
+        <div class="details-grid">
+
+           <div class="details-box">
+            <h1>Name</h1>
+            <p>SusanaDjanie</p>
+           </div>
+    
+           <div class="details-box">
+            <h1>Email</h1>
+            <p>Susanadjanie1@gmail.com</p>
+           </div>
+    
+           <div class="details-box">
+            <h1>Address</h1>
+            <p>Accra,Ghana</p>
+           </div>
+    
+           <div class="details-box">
+            <h1>Conatct</h1>
+            <p>+233208692395</p>
+
+        </div>
+    </div>
+    
+</section>
+
+
+<!-- FIRST TAILWIND CSS SECTION -->
+
+<!-- MY BODY -->
+<body>
+  
+<section class="bg-gray-50 py-16">
+    <div class="max-w-8xl mx-auto text-center px-6">
+        <h2 class="!text-[40px] font-bold text-[#800020] underline underline-offset-10">My Skills</h2>
+
+        <p class="text-gray-600 mt-2">Here are some of the technologies I work with.</p>
+
+        <!-- <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 mt-10 justify-center"> -->
+           <div class="grid sm:grid-cols-3 md:grid-cols-5 gap-8 mt-10 ml-10 justify-center">
+
+            <!-- Skill 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <img src="./images/html.png" alt="">
+                <!-- <i class="fa-brands fa-js text-yellow-500 text-5xl mb-4"></i> -->
+                <h3 class="text-xl font-semibold">HTML</h3>
+                <p class="text-gray-600">Building structure for web pages</p>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <img src="./images/cssz.png" alt="">
+                <!-- <i class="fa fa-code text-blue-500 text-5xl mb-4"></i> -->
+                <h3 class="text-xl font-semibold">CSS</h3>
+                <p class="text-gray-600">Styling and layout for websites.</p>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <img src="./images/js.png" alt="">
+                <!-- <i class="fa-brands fa-js text-yellow-500 text-5xl mb-4"></i> -->
+                <h3 class="text-xl font-semibold">JavaScript</h3>
+                <p class="text-gray-600">Adding interactivity to web pages.</p>
+            </div>
+
+            <!-- Skill 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <img src="./images/node-.png" alt="">
+                <!-- <i class="fa-brands fa-js text-yellow-500 text-5xl mb-4"></i> -->
+                <h3 class="text-xl font-semibold">Node.js</h3>
+                <p class="text-gray-600">Server-side JavaScript for backend development</p>
+            </div>
+
+            <!-- Skill 5 -->
+             <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <img src="./images/git.png" alt="">
+                <!-- <i class="fa-solid fa-database text-purple-500 text-5xl mb-4"></i> -->
+                <h3 class="text-xl font-semibold">Github</h3>
+                <p class="text-gray-600">Version control and code collaboration.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="bg-gray-50 p-8 max-w-10xl mx-auto flex flex-col md:flex-row items-center
+md:items-start gap-10">
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 place-items-center">
+<!-- Left Side: Image with margin -->
+<div class="w-full md:w-1/3 mb-6 md:mb-0 self-start mr-auto">
+   <img src="./images/trial-pic.jpg" alt="My Skills" class="w-full rounded-lg shadow-md">
+</div>
+
+<!-- Right Side: Skills with extra padding -->
+<div class="w-full md:w-2/3 text-center md:text-left">
+   <h2 class="text-3xl font-bold text-gray-800 mb-6">Soft Skills</h2>
+
+
+   <div class="space-y-6 w-full md:w-11/12">
+   <!-- Skill 1 -->
+   <div class="px-6 md:px-4">
+       <div class="flex justify-between">
+           <span class="text-lg font-medium text-gray-700"> Problem-solving</span>
+           <span class="text-lg font-medium text-gray-700">80%</span>
+       </div>
+       <div class="w-full bg-gray-300 rounded-full h-3 mt-2">
+           <div class="bg-[#800020] h-3 rounded-full" style="width: 80%;"></div>
+       </div>
+   </div>
+</div>
+
+
+   <div class="space-y-6">
+       <!-- Skill 1 -->
+        
+       <div class="px-6 md:px-4">
+           <div class="flex justify-between">
+               <span class="text-lg font-medium text-gray-700">Teamwork </span>
+               <span class="text-lg font-medium text-gray-700">80%</span>
+           </div>
+           <div class="w-full bg-gray-300 rounded-full h-3 mt-2">
+               <div class="bg-[#800020] h-3 rounded-full" style="width: 80%;"></div>
+           </div>
+       </div>
+
+       <!-- Skill 2 -->
+       <div class="px-6 md:px-4">
+           <div class="flex justify-between">
+               <span class="text-lg font-medium text-gray-700">Attention to detail</span>
+               <span class="text-lg font-medium text-gray-700">85%</span>
+           </div>
+           <div class="w-full bg-gray-300 rounded-full h-3 mt-2">
+               <div class="bg-[#800020] h-3 rounded-full" style="width: 85%;"></div>
+           </div>
+       </div>
+
+       <div class="px-6 md:px-4">
+        <div class="flex justify-between">
+            <span class="text-lg font-medium text-gray-700">Strong Communication </span>
+            <span class="text-lg font-medium text-gray-700">90%</span>
+        </div>
+        <div class="w-full bg-gray-300 rounded-full h-3 mt-2">
+            <div class="bg-[#800020] h-3 rounded-full" style="width: 90%;"></div>
+        </div>
+    </div>
+       <!-- Skill 3 -->
+       <div class="px-6 md:px-4">
+           <div class="flex justify-between">
+               <span class="text-lg font-medium text-gray-700">Time Management</span>
+               <span class="text-lg font-medium text-gray-700">90%</span>
+           </div>
+           <div class="w-full bg-gray-300 rounded-full h-3 mt-2">
+               <div class="bg-[#800020] h-3 rounded-full" style="width: 90%;"></div>
+           </div>
+       </div>
+   </div>
+</div>
+
+</div>
+   
+</section>
+
+
+    <section>
+        <div class="section-title">
+            <h1>Education & Certifications</h1>
+        </div>
+    
+        <div class="container">
+            <div class="section">
+                <h2>Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="content">
+                            <h3>Bachelor of Business Adminstration</h3>
+                            <p class="uni">University of Professional Studies, Accra (2020 - 2022)</p>
+                        </div>
+                    </div>
+    
+                    <div class="timeline-item">
+                        <div class="content">
+                            <h3>Diploma in Management</h3>
+                            <p class="uni">University of Professional Studies, Accra (2018 - 2020)</p>
+                        </div>
+                    </div>
+    
+                    <div class="timeline-item">
+                        <div class="content">
+                            <h3>West African Examination Certificate</h3>
+                            <p class="uni">Nungua Senior High School (2013 - 2016)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="section">
+                <h2>Training Certifications</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="content">
+                            <h3>Web Development</h3>
+                            <p class="uni">Mest Africa (2025 - Present)</p>
+                        </div>
+                    </div>
+    
+                    <div class="timeline-item">
+                        <div class="content">
+                            <h3>Virtual Assisatant</h3>
+                            <p class="uni">ALX (Aug - Oct 2024)</p>
+                        </div>
+            
+                    </div>
+                    <div class="timeline-item">
+                        <div class="content">
+                            <h3>Virtual Assisatant</h3>
+                            <p class="uni">ALX (Aug - Oct 2024)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    
+    
+    <section class="bg-softWhite py-12 px-6 flex flex-col items-center">
+
+        <!-- Section Title (Centered & Full Width) -->
+        <div class="w-full text-center mb-18">
+            <h2 class="!text-[40px] font-bold text-[#800020] underline underline-offset-10">Experiences</h2>
+        </div>
+    
+        <!-- Content Wrapper (Image + Text) -->
+        <div class="flex flex-col md:flex-row items-start w-full max-w-6xl gap-5">
+
+    
+            <!-- Left Side: Square Image -->
+            <div class="md:w-1/3 flex justify-center md:justify-start">
+                <img src="./images/trial-pic.jpg" alt="Person with Laptop" class="w-80 md:w-auto h-90 object-cover rounded-lg">
+            </div>
+    
+            <!-- Right Side: Experience Section (Moved inside the same flex container) -->
+            <div class="md:w-2/3 space-y-6 px-6 text-left">
+                
+                <!-- Job 1 -->
+                <div class="bg-white p-6 rounded-lg mt-10">
+                    <!-- <p class="text-gray-500 text-sm">Jan 2024 – Dec 2024</p> -->
+                    <h2 class="text-xl font-bold text-gray-900">Administrator</h2>
+                    <h3 class="text-gray-700 font-semibold">- R. A Codjoe Law Offices [Jan 2024 – Dec 2024]</h3>
+                    <p class="text-gray-700 mt-5">
+                        <li> Managed daily office operations, including scheduling meetings per month, handling calls, 
+                            and maintaining organized digital and physical records.</li>
+                            <li>Streamlined data entry processes, ensuring 100% accuracy and bringing records up to date,
+                                which improved operational efficiency.</li>
+                    </p>
+                </div>
+    
+                <!-- Job 2 -->
+                <div class="bg-white p-6 rounded-lg">
+                    <!-- <p class="text-gray-500 text-sm">Nov 2022 – Nov 2023</p> -->
+                    <h2 class="text-xl font-bold text-gray-900">Administrator/ Financial Assistant</h2>
+                    <h3 class="text-gray-700 font-semibold">- CTIW Foundation [Nov 2022 – Nov 2023]</h3>
+                    <p class="text-gray-700 mt-2">
+                        <li>Provide support in organizing administrative activities, including clerical work and meetings.</li>
+                        <li>Efficiently managed incoming calls and emails by responding to inquiries with accurate 
+                            information in a timely and professional manner.</li>
+                   
+
+                </div>
+    
+            </div> <!-- End of Right Side -->
+    
+        </div> <!-- End of Flex Container -->
+    
+    </section>
+
+
+
+    <section class="bg-gray-50 py-10">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="!text-[40px] font-bold text-[#800020] underline underline-offset-10 mb-10">Projects</h2>
+    
+            <!-- Slider Container -->
+            <div class="relative w-full overflow-hidden">
+                <button id="prevBtn" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full">&lt;</button>
+    
+                <div id="slider" class="flex gap-6 transition-transform duration-500">
+                    <div class="min-w-1/3"><img src="./images/project (1).jpg" alt="Project 1" class="rounded-lg shadow-md"></div>
+                    <div class="min-w-1/3"><img src="./images/project (2).jpg" alt="Project 2" class="rounded-lg shadow-md"></div>
+                    <div class="min-w-1/3"><img src="./images/project (3).jpg" alt="Project 3" class="rounded-lg shadow-md"></div>
+                    <div class="min-w-1/3"><img src="./images/project (4).jpg" alt="Project 4" class="rounded-lg shadow-md"></div>
+                    <div class="min-w-1/3"><img src="./images/project (1).jpg" alt="Project 5" class="rounded-lg shadow-md"></div>
+                </div>
+    
+                <button id="nextBtn" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full">&gt;</button>
+            </div>
+        </div>
+    </section>
+    
+
+<footer>
+    <div class="bg-[#800020]">
+        <div class="max-w-screen-lg px-4 sm:px-6 text-gray-800 sm:grid md:grid-cols-3 sm:grid-cols-2 mx-auto">
+            <div class="p-5">
+                <!-- <h3 class="font-bold text-xl text-indigo-600">Susana</h3> -->
+                <img src="./images/logo-no-background.png" alt="">
+            </div>
+
+            <div class="p-5">
+                <div class="text-sm uppercase text-indigo-600 font-bold">Support</div>
+                <a class="my-3 block" href="/#">Help Center <span class="text-teal-600 text-xs p-1"></span></a><a
+                    class="my-3 block" href="/#">Privacy Policy <span class="text-teal-600 text-xs p-1"></span></a><a
+                    class="my-3 block" href="/#">Conditions <span class="text-teal-600 text-xs p-1"></span></a>
+            </div>
+            <div class="p-5">
+                <div class="text-sm uppercase text-indigo-600 font-bold">Contact Me</div>
+                <a class="my-3 block" href="/#">Accra,Ghana
+                    <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">susanadjanie1@gmail.com
+                    <span class="text-teal-600 text-xs p-1"></span></a>
+            </div>
+        </div>
+
+    </div>
+            </div>
+            <div class=" container mx-auto flex flex-col items-center justify-center text-center">© Copyright 2025. All Rights Reserved.</div>
+     
+        </div>
+    </div>
+    
+</footer>
+    
+<script src="script.js"></script>   
 </body>
 </html>
